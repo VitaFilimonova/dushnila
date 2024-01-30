@@ -1,0 +1,51 @@
+@import './../App';
+
+
+.days__container {
+background-color: $global-black;
+  max-width: 336px;
+  height: 383px;
+  border-radius: 20px;
+
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 55px 20px 36px;
+}
+
+.days__header {
+  @include font-style(55px, 500);
+  color: $global-white;
+  letter-spacing: -3.3px;
+font-size: clamp(45px, 3vw, 55px);
+}
+
+.days__button {
+  @include font-style(25px, 500);
+  letter-spacing: -1.5px;
+  display: flex;
+  max-width: 296px;
+  height: 63.65px;
+  padding: 15px 30px;
+  justify-content: space-between;
+  align-items: center;
+
+
+  border-radius: 100px;
+  border: 1px solid $global-white;
+  background: $global-white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.days__button:hover {
+  border: 1px solid $global-white;
+  background: $global-black;
+  color: $global-white;
+}
+
+.days__button:hover img {
+  filter: brightness(.5) invert(1.5);
+  transition: color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}

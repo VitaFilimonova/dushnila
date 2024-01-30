@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './reset.css';
+import './App.scss';
+import HappyTab from "./components/HappyTab";
+import DaysTab from "./components/DaysTab";
+import LogoTab from "./components/LogoTab";
+import IndicatorsTab from "./components/IndicatorsTab";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <h1 className="App__header">Душнила</h1>
+            <div className="App__tabs">
+                <HappyTab/>
+                <DaysTab/>
+                <LogoTab/>
+                <IndicatorsTab/>
+            </div>
+
+        </div>
+    );
 }
 
 export default App;
