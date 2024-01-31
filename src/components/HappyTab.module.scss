@@ -5,26 +5,26 @@
   height: 493px;
   background-color: $global-green;
   border-radius: 20px;
-  padding: 62px 60px 66px;
+  padding: 62px clamp(50px, 9%, 60px) 66px;
 
   grid-area: 1 / 1 / 2 / 3;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
-.happyTab__container--alarm {
-  background-color: var(--global-red);
+.happyTab__container_alarm {
+  background-color: $global-red;
 }
 
 .happyTab__header {
   @include font-style(89px, 500);
   letter-spacing: -5.34px;
   font-size: clamp(70px, 5vw, 89px);
-
 }
 
 .happyTab__description {
   @include font-style(34px, 400);
+  font-size: clamp(28px, 2vw, 34px);
 }

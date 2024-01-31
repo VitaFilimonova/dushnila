@@ -1,0 +1,33 @@
+@import './../App';
+
+.valuesTab__container {
+  max-width: 1088px;
+  height: 920px;
+
+  grid-area: 1 / 3 / 3 / 4;
+
+  border-radius: 20px;
+  border: 1px solid $global-black;
+  background: $global-green-gradient;
+  padding: clamp(50px, 4vw, 70px) clamp(70px, 10%, 100px);
+}
+
+.valuesTab__container_alarm {
+  background: $global-red-gradient;
+}
+
+.valuesTab__value {
+  margin-bottom: 68px;
+}
+
+.valuesTab__header {
+  @include font-style(200px, 400);
+  font-size: clamp(130px, 11vw, 200px);
+  letter-spacing: -12px;
+  white-space: nowrap;
+}
+
+.valuesTab__description {
+  @include font-style(40px, 700);
+  letter-spacing: -2.4px;
+}

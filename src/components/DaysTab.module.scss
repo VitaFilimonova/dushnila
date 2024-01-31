@@ -1,17 +1,16 @@
 @import './../App';
 
-
 .days__container {
-background-color: $global-black;
+  background-color: $global-black;
   max-width: 336px;
   height: 383px;
   border-radius: 20px;
 
   grid-area: 2 / 1 / 3 / 2;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   padding: 55px 20px 36px;
 }
 
@@ -19,19 +18,20 @@ background-color: $global-black;
   @include font-style(55px, 500);
   color: $global-white;
   letter-spacing: -3.3px;
-font-size: clamp(45px, 3vw, 55px);
+  font-size: clamp(45px, 3vw, 55px);
 }
 
 .days__button {
   @include font-style(25px, 500);
   letter-spacing: -1.5px;
-  display: flex;
+
+
   max-width: 296px;
   height: 63.65px;
+  display: flex;
   padding: 15px 30px;
   justify-content: space-between;
   align-items: center;
-
 
   border-radius: 100px;
   border: 1px solid $global-white;
