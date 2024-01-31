@@ -8,7 +8,7 @@ Dushnila
 * [Usage](#usage)
 
 ## General info
-A special device named "Dushnila" analyzes the values of temperature and carbon dioxide. If the set limits are exceeded, a warning appears that the parameters have been exceeded in the form of a background color change. The values are updated 1 time per minute. It is convenient to use the interface up to a resolution of 1550px since the layout does not provide a mobile version. You can check the project using the link to GitHub Pages.
+A special device named "Dushnila" analyzes the values of temperature and carbon dioxide. If the set limits are exceeded, a warning appears that the parameters have been exceeded in the form of a background color change. The values are updated 1 time per minute. It is convenient to use the interface up to a resolution of 1550px since the layout does not provide a mobile version. You can check the project using the link to GitHub Pages (If you have a "Mixed Content" problem when using githubPages then unfortunately you will have to change your browser settings to view unsafe content (because the api uses the http protocol)).
 ![image](https://github.com/VitaFilimonova/dushnila/assets/114240442/2bb8b844-c6e7-4ac2-aff5-88baf66b833a)
 
 ![image](https://github.com/VitaFilimonova/dushnila/assets/114240442/b821c3ac-a90f-433f-b200-0d680fde043b)
