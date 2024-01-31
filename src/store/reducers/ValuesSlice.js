@@ -5,7 +5,6 @@ const initialState = {
     co2: 0,
     tempError: false,
     co2Error: false,
-    isLoading: false,
     error: null
 }
 export const valuesSlice = createSlice({
@@ -29,14 +28,11 @@ export const valuesSlice = createSlice({
                 : state.co2Error = false
 
         },
-        setLoading: (state, action) => {
-            state.isLoading = action.payload;
-        },
+
         setError: (state, action) => {
             state.error = action.payload;
         },
     },
 })
 
-export const {updateValues, setError, setLoading} = valuesSlice.actions;
-export default valuesSlice.reducer
+export const {updateValues, setError} = valuesSlice.actions;

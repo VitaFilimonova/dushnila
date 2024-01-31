@@ -5,18 +5,17 @@ import DaysTab from "./components/DaysTab";
 import LogoTab from "./components/LogoTab";
 import ValuesTab from "./components/ValuesTab";
 import {useSelector} from "react-redux";
+import {useGetValuesQuery} from "./services/ValuesServices";
 
 function App() {
-    const {isLoading , error} = useSelector((state) => state.valuesReducer);
+    useGetValuesQuery(undefined, {
+        pollingInterval: 60000,
+    });
 
-
-
+    const {error} = useSelector((state) => state.valuesReducer);
     if (error) {
-        return <div>Ошибка: {error.message}</div>; // Сообщение об ошибке
+        return <div className="error">Ошибка: {error.status} {error.originalStatus}</div>;
     }
-    // if (isLoading) {
-    //     return <div>Загрузка...</div>; // Индикатор загрузки
-    // }
 
     return (
         <div className="App">

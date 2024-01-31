@@ -1,24 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import style from './ValuesTab.module.scss'
-import {useGetValuesQuery} from "../services/ValuesServices";
-import {useDispatch, useSelector} from "react-redux";
-import {setError, setLoading, updateValues} from "../store/reducers/ValuesSlice";
+import {useSelector} from "react-redux";
 
 const ValuesTab = () => {
-    const {data, error, isLoading} = useGetValuesQuery(undefined, {
-        pollingInterval: 2000,
-    });
-    const dispatch = useDispatch();
     const {co2, temp, tempError, co2Error} = useSelector((state) => state.valuesReducer);
 
-    useEffect(() => {
-        if (data) {
-            dispatch(updateValues(data));
-        }
-        dispatch(setLoading(isLoading));
-        dispatch(setError(error));
-    }, [data, isLoading, error, dispatch]);
-    
     return (
         <div
             className={`${style.valuesTab__container} ${co2Error || tempError ? style.valuesTab__container_alarm : ''}`}>
