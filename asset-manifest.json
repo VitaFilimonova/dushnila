@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dushnila/static/css/main.dec1a1bf.css",
-    "main.js": "/dushnila/static/js/main.6fc641a9.js",
+    "main.css": "/dushnila/static/css/main.a1d6f648.css",
+    "main.js": "/dushnila/static/js/main.3f5bf0d6.js",
     "static/js/787.da4cc64b.chunk.js": "/dushnila/static/js/787.da4cc64b.chunk.js",
     "static/media/logo.svg": "/dushnila/static/media/logo.03dc25876ed10640149dee7df5efcd4f.svg",
     "index.html": "/dushnila/index.html",
     "static/media/arrow_right.svg": "/dushnila/static/media/arrow_right.f87b807aab0d258bccad124505edb9b9.svg",
-    "main.dec1a1bf.css.map": "/dushnila/static/css/main.dec1a1bf.css.map",
-    "main.6fc641a9.js.map": "/dushnila/static/js/main.6fc641a9.js.map",
+    "main.a1d6f648.css.map": "/dushnila/static/css/main.a1d6f648.css.map",
+    "main.3f5bf0d6.js.map": "/dushnila/static/js/main.3f5bf0d6.js.map",
     "787.da4cc64b.chunk.js.map": "/dushnila/static/js/787.da4cc64b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dec1a1bf.css",
-    "static/js/main.6fc641a9.js"
+    "static/css/main.a1d6f648.css",
+    "static/js/main.3f5bf0d6.js"
   ]
 }
